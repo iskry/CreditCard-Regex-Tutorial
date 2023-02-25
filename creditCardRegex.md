@@ -24,6 +24,17 @@ This regular expression ensures that the credit card number begins with a 4, fol
 ## Regex Components
 
 ### Anchors
+Regular expressions use anchors to indicate the beginning or end of a string, allowing for precise pattern matching. In credit card regex, these anchors are particularly important to ensure that the regular expression only matches the entire credit card number and nothing else.
+
+The two most commonly used anchors in credit card regex are the ^ and $ characters. The ^ anchor is used to indicate the start of the string, often signaling the beginning of the credit card number. The $ anchor is used to indicate the end of the string, signaling the end of the credit card number.
+
+For instance, a regular expression designed to match a 16-digit credit card number using anchors would appear like this:
+
+```
+/^[0-9]{16}$/
+
+```
+In this example, the ^ anchor denotes the start of the string, followed by [0-9]{16} which matches exactly 16 digits. The $ anchor then indicates the end of the string. Overall, these anchors guarantee that the regular expression exclusively matches a string that consists of exactly 16 digits, and nothing else.
 
 ### Quantifiers
 
