@@ -51,14 +51,11 @@ Bracket expressions, also known as character classes, are used in regular expres
 
 The [0-9] bracket expression matches any digit from 0 to 9. By using this bracket expression in conjunction with the {12} quantifier, we can ensure that there are exactly 12 digits after the initial "4" digit in the credit card number.
 
-### Character Classes
-
-### The OR Operator
-
-### Flags
-
-### Character Escapes
-
 ## Author
+Troy Sparks is an upcoming developer with a passion for programming and a desire to continually improve his skills. He can be found on LinkedIn and GitHub, where he actively shares his projects and collaborations with the tech community. As a dedicated learner, Troy is always eager to expand his knowledge and take on new challenges.
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+###### [GitHub](https://github.com/iskry)<br /> 
+###### [Email](iskrydev@gmail.com)<br />
+###### [LinkedIn](https://www.linkedin.com/in/troy-sparks-a7899a262/)<br /> 
+
+
