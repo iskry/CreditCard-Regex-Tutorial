@@ -37,10 +37,19 @@ For instance, a regular expression designed to match a 16-digit credit card numb
 In this example, the ^ anchor denotes the start of the string, followed by [0-9]{16} which matches exactly 16 digits. The $ anchor then indicates the end of the string. Overall, these anchors guarantee that the regular expression exclusively matches a string that consists of exactly 16 digits, and nothing else.
 
 ### Quantifiers
+Quantifiers are used in regular expressions to specify the number of times a particular character or group of characters should appear in the input string. In the credit card regex /^4[0-9]{12}(?:[0-9]{3})?$/, we can see the use of quantifiers to specify the number of digits that must appear in the credit card number.
+
+The {12} quantifier is used to specify that there must be exactly 12 digits after the initial "4" digit in the credit card number. The (?:[0-9]{3})? quantifier is used to specify that there may be an optional 3-digit security code at the end of the credit card number. By using these quantifiers, we can ensure that the credit card number matches the required format.
 
 ### Grouping Constructs
+Grouping constructs are used in regular expressions to group characters together, allowing us to apply quantifiers and other modifiers to the group as a whole. In the credit card regex /^4[0-9]{12}(?:[0-9]{3})?$/, we can see the use of a grouping construct to specify the optional 3-digit security code.
+
+The (?:[0-9]{3})? grouping construct specifies that the group [0-9]{3} may appear zero or one times. This allows us to specify that the security code is optional without changing the overall structure of the regular expression.
 
 ### Bracket Expressions
+Bracket expressions, also known as character classes, are used in regular expressions to match a single character from a set of characters. In the credit card regex /^4[0-9]{12}(?:[0-9]{3})?$/, we can see the use of bracket expressions to match the 12 digits in the credit card number.
+
+The [0-9] bracket expression matches any digit from 0 to 9. By using this bracket expression in conjunction with the {12} quantifier, we can ensure that there are exactly 12 digits after the initial "4" digit in the credit card number.
 
 ### Character Classes
 
